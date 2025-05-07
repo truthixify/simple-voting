@@ -31,7 +31,7 @@ contract SimpleVoting {
     }
 
     // State Variables
-    address public admin;
+    address public immutable admin;
     VoteStatus public voteStatus;
     mapping(address => Voter) public voters;
     Candidate[] public candidates;
